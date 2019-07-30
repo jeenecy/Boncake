@@ -1,0 +1,79 @@
+@import "base.scss";
+footer{
+    width:100%;
+    height:212px;
+    // background: salmon;
+    // position: absolute;
+    // bottom: 0;
+    border-top: 1px solid #c9c9c9;
+    .footer{
+        width: 1170px;
+        height: 80%;
+        // background: sandybrown;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        // 尾部左侧
+       .business{
+            width: 230px;
+            height: 100%;
+            // background: antiquewhite;
+            float: left;
+            .business-logo{
+                width:200px;
+                height:50px;
+                margin-bottom: 36px;
+             }
+
+             .business-name{
+                line-height: 20px;
+                font-size: 12px;
+                color: #333333;
+             }
+             .business-code{
+                line-height: 20px;
+                font-size: 12px;
+                color: #333333;
+             }
+        } 
+        /*尾部中间*/
+        .contact{
+        width: 681px;
+        height:100%;
+        line-height: 20px;
+        padding-top: 55px;
+        vertical-align: top;
+        font-size: 0px;
+        color: #333333;
+        // background: aqua;
+        float: left;
+
+            li {
+                display: inline-block;
+                width: 140px;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 12px ;
+                position: relative;
+
+                a{font-size: 12px !important;}
+                div{font-size: 12px;}
+
+                
+            }
+        }
+        /*尾部右侧*/
+        .address{
+            height:100%;
+            img{
+                width:33px;
+                height: 33px;
+                margin-left: 20px;
+                margin-right: 20px;  }
+            .desc{
+                margin-top:10px; 
+                font-size:12px; 
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+@import "modules/base.scss";
+@import "modules/header.scss";
+@import "modules/footer.scss";
+
+.choose-container{
+    width:100%;
+    height:180px;
+    padding-top: 40px;
+    // background: sandybrown;
+    .choose{
+        width:1170px;
+        height:73px;
+        margin:0 auto;
+        // background: seagreen;
+        .allgoods{
+            width: 100px;
+            height: 30px;
+            border-radius:15px;
+            float: left;
+            color: #f3f2f1;
+            background-color: #333333;
+            line-height: 30px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 24px;
+        }
+        .allchoose{
+            width: 100px;
+            height: 30px;
+            border-radius:15px;
+            float: left;
+            color:#333333;
+            background-color:  #f3f2f1;
+            line-height: 30px;
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 24px;
+            margin-left: 30px;
+        }
+        /*搜索栏区域*/ 
+        .search-input{
+            width:175px;
+            height: 22px;
+            float: right;
+            background:#f3f2f1 ;
+            border-radius:15px;
+            margin-top:30px;
+            input{
+                width: 150px;
+                height:100%;
+                background: transparent;
+                border: none;
+                float: left;
+                font-size: 14px;
+                padding-left: 10px;
+                outline: none;
+            }
+            button{
+                width: 25px;
+                height: 25px;
+                outline: none;
+                cursor: pointer;
+                background: url(/images/search-icon.png) no-repeat center 4px;
+            }
+        }
+    }
+}
+
+/*商品渲染区域*/
+.star-wrapper{
+    width:1170px; 
+    margin: 0 auto;
+     .star-ul{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        li:hover{box-shadow:0px 0px 15px #c9c9c9;transition: 0.5s;}
+          li{
+            width: 270px;
+            height:400px;
+            margin-right: 22px;
+            margin-top: 15px;
+            border:1px solid #c9c9c9;
+
+             a {
+             .star-cake{
+                width: 270px;
+                height:400px;
+                padding: 2px;
+                position: relative;
+
+                 .beauty{
+                    max-width: 265px;
+                    max-height: 284px;
+                    vertical-align: middle;
+                    padding-top:6px;
+                }
+
+                 .star-titleEn{
+                    display: block;
+                    margin-left: 15px;
+                }
+
+                 .star-title{
+                    display: block;
+                    margin-top: 10px;
+                    margin-left: 15px;
+                }
+
+                 .star-price{
+                    display: block;
+                    margin-top: 10px;
+                    margin-left: 15px;
+                }
+
+                 button{
+                    position: absolute;
+                    bottom: 10px;
+                    right: 15px;
+                    width: 72px;
+                    height: 26px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    background-color: #333333;
+                    cursor: pointer;
+                }
+
+                 button img{
+                    width: 18px;
+                    height: 16px;
+                    vertical-align: middle;
+                    border:none;
+                    margin-right: 5px;
+                    margin-top: -3px;
+                }
+             }
+                
+            }
+        }
+      
+    }
+   
+} 

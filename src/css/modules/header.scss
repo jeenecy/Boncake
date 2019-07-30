@@ -1,0 +1,150 @@
+@import "base.scss";
+header{
+    width: 100%;
+    margin-bottom: 5px;
+    // position: fixed !important;
+    height: 92px;
+    z-index: 1000000;
+    background: white;
+    transition: all 1s;
+    top: 0;
+    box-shadow:0px 1px 12px 0px rgba(128, 113, 113, 0.3);
+
+    .header{
+        width:1260px;
+        position: relative;
+        width: 1260px;
+        height: 92px;
+        z-index: 99;
+        margin: 0 auto;
+
+         a {
+            height: auto;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+            line-height: 100%;
+            vertical-align: middle;
+            }
+
+         .nav-logo {
+            position: absolute;
+            left: 40px;
+            bottom: 12px;
+            width: 221px;
+            height: 58px;
+        }
+
+         .nav-menu{
+            width:586px;
+            height:auto !important;
+            text-align: center;
+            /* background: antiquewhite; */
+            position: absolute;
+            left:264px;
+            display: flex;
+            justify-items: center;
+
+             a {
+                display: block;
+                position: relative;
+                text-align: center;
+                font-size: 14px;
+                padding-top: 13px;
+                padding-left: 38px;
+                color:#333333;
+
+                 span {
+                    padding-top: 8px;
+                    font-size: 12px;
+                    display: block;
+                    color:#999999;
+                    height: 30px;
+                }
+                 a:hover{color: #d3b145;}
+                span:hover{ border-bottom: 2px solid #d3b145;color:#d3b145 !important; }  
+            }
+            
+            }
+           /* 头部分隔线 */
+             .nav-cut-line {
+                position: absolute;
+                right: 425px;
+                bottom: 30px;
+                width: 3px;
+                height: 36px;
+            }
+            
+               /* 头部右侧 */
+             .header-controller{
+                position: absolute;
+                right: 40px;
+                bottom: 0;
+                height: 66px;
+                line-height: 66px;
+                padding-top: 26px;
+                width: 384px;
+                /* background: silver; */
+
+                 ul{
+                     display: flex;
+                    justify-content: space-between;
+                    width: 350px;
+                    margin-top: -15px;
+                    margin-left: 32px;
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+                        height: 10px;
+                        transition: all .2s linear;
+
+                            a{
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: 15px;
+                                img{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-right:5px;
+                                    width:18px;
+                                    height: 18px;
+                                }
+                            }
+                            .an{width: 9px !important;height: 9px !important;margin-top:2px !important;padding-left:3px !important; }
+                            .sy{color:#d3b145 !important; } 
+                            .sy-span{color:#d3b145 !important; border-bottom:2px solid #d3b145 !important;}     
+                            }
+                    }
+                }               
+        }
+        /* 区域下拉菜单 */
+        .area-list{
+            width: 100px;
+            height: 210px;
+            position: absolute;
+            top: 60px;
+            box-shadow: 0px 1px 12px 0px rgba(128, 113, 113, 0.3);
+            border-radius: 10px;
+            z-index: 9999;
+            right: 170px;
+            display: none;
+
+                li{
+                    margin-top: 7px;
+                    margin-left: 5px;
+
+                    a{
+                        color:#333333;
+                    }
+                    img{
+                        vertical-align: middle;
+                        display: inline-block;
+                        width: 19px;
+                        margin-right: 5px;
+                    }  
+                }
+                li:hover a{color:#d3b145 !important}
+                .an:hover .area-list{display: block;} 
+            }        
+    }
+        
