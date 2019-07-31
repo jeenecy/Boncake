@@ -6,9 +6,38 @@
      width: 100%;
      height:100%;
      margin-top:80px;
+
+   //   轮播图区域
+   .swiper-container {
+      width: 100%;
+      // width: 1170px;
+      height: 612px;
+      // margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      img{width: 1170px;height:750px;}
+    }
      .section{
-        width:1170px;
-        height: 700px;
+        width:1171px;
+        height: 612px;
         margin:0 auto;
 
         /*广告图片区域设置*/

@@ -15,7 +15,7 @@
 
 </div>
 <!-- 列表渲染区域 -->
-<div class="star-wrapper">
+<div class="star-wrapper"id="list-goods">
         <ul class="star-ul">
             <li>
                 <a target="_blank" href="/html/detail.html">
@@ -117,6 +117,21 @@
                                             </a>
                                         </li>
         </ul>
+        <script type="text/html" id="list-ul">
+            {{each list shop}}
+            <li>
+                <a target="_blank" href="/html/detail.html">
+                    <div class="star-cake">
+                        <img src="{{shop.img}}"class="beauty">
+                        <span class="star-titleEn">{{shop.entitle}}</span>
+                        <span class="star-title">{{shop.title}}</span>
+                        <span class="star-price">￥ {{shop.price}}</span>
+                        <button><img src="/images/btn-cart-icon.png" alt="">购买</button>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </script>
     </div>
     <footer></footer>
     <script src="/libs/requirejs/require.min.js" data-main="/js/list"></script>

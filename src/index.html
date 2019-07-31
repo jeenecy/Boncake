@@ -6,11 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/libs/swiper/swiper.min.css">
 </head>
 <body>
+       
     <header></header>
     <main>
         <!-- 轮播图区域 -->
+              <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/images/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/images/banner2.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
         <!-- 星空区域 -->
        <div class="section">
            <div class="starimg">
@@ -147,6 +169,9 @@
     </main>
     <footer></footer>
     <script src="/libs/requirejs/require.min.js" data-main="/js/index"></script>
+    <script>
+         
+            </script>
     <!-- <script>
         $('header').load('/html/modules/header.html')
         $('footer').load('/html/modules/footer.html')
